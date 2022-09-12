@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed typing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button id="level-btn" class="level-btn">
+      <i class="fa-solid fa-gear"></i>
+    </button>
+    <div class="settings hide" id="settings">
+      <form id="level-form">
+        <label for="">Level :</label>
+        <select name="" id="level">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </form>
+    </div>
+    <div class="container">
+      <h2>Speed Typing Game</h2>
+      <h1 id="word" class="word"></h1>
+      <input
+        type="text"
+        name=""
+        id="text"
+        autocomplete="off"
+        placeholder="Type text that appears."
+      />
+      <p class="time-container">time <span id="time"> sec.</span></p>
+      <p class="score-container">score <span id="score"> point</span></p>
+      <div id="gameover" class="gameover-container">Game over</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
